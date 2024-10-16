@@ -18,13 +18,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_contraintStart_toStartOf="parent" >
-    </ImageView>
+        app:layout_contraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="129dp"
-        android:layout_height="129dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginTop="48dp"
         android:src="@drawable/ic_icono_foreground"
         app:layout_constraintEnd_toEndOf="@id/main"
@@ -38,7 +37,6 @@
         android:id="@+id/username"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="49dp"
         app:startIconDrawable="@drawable/ic_icono_foreground"
         app:layout_constraintStart_toStartOf="@id/guideline4"
         app:layout_constraintEnd_toEndOf="@id/guideline5"
@@ -62,7 +60,6 @@
         app:layout_constraintStart_toStartOf="@id/guideline4"
         app:layout_constraintEnd_toEndOf="@id/guideline5"
         app:layout_constraintTop_toBottomOf="@id/username"
-        app:passwordToggleEnabled="true"
         >
 
         <EditText
@@ -80,7 +77,6 @@
         android:id="@+id/login"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:text="LOGIN"
         android:backgroundTint="@color/teal_700"
         app:cornerRadius="0dp"
@@ -102,20 +98,7 @@
         app:layout_constraintStart_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toBottomOf="@id/login"
         >
-
-    </Button>
-    <Button
-        android:id="@+id/registrate"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/teal_700"
-        android:text="Registrate"
-        app:cornerRadius="8dp"
-        app:layout_constraintEnd_toEndOf="@id/main"
-        app:layout_constraintStart_toStartOf="@+id/main"
-        app:layout_constraintBottom_toBottomOf="@id/main"
-       >
-
+        
     </Button>
 
     <androidx.constraintlayout.widget.Guideline
@@ -123,14 +106,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.2" />
+        app:layout_constraintGuide_percent="0.3" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.8" />
+        app:layout_constraintGuide_percent="0.7" />
 
 
 
