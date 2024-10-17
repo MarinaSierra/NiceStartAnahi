@@ -5,37 +5,37 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient"
-    tools:context=".Login">
+    tools:context=".SignUp"
+    android:background="@drawable/gradient">
 
     <ImageView
-        android:id="@+id/girl"
+        android:id="@+id/boy"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:src="@drawable/img"
         android:scaleType="fitStart"
-        android:src="@drawable/girl"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintTop_toTopOf="parent" >
+    </ImageView>
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="129dp"
+        android:layout_height="129dp"
+        android:layout_marginTop="48dp"
         android:src="@drawable/ic_icono_foreground"
         app:layout_constraintEnd_toEndOf="@id/main"
         app:layout_constraintStart_toStartOf="@id/main"
         app:layout_constraintTop_toTopOf="@id/main">
 
     </ImageView>
-
-
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/username"
+        android:id="@+id/name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:startIconDrawable="@drawable/ic_icono_foreground"
+        android:layout_marginTop="49dp"
+        app:startIconDrawable="@drawable/user"
         app:layout_constraintStart_toStartOf="@id/guideline4"
         app:layout_constraintEnd_toEndOf="@id/guideline5"
         app:layout_constraintTop_toBottomOf="@id/logo">
@@ -45,21 +45,21 @@
             android:layout_height="wrap_content"
             android:alpha="0.6"
             android:background="@color/white"
-            android:text="Username"/>
+            android:text="Name"/>
 
 
     </com.google.android.material.textfield.TextInputLayout>
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/password"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:startIconDrawable="@drawable/ic_icono_foreground"
+        app:startIconDrawable="@drawable/password"
         app:layout_constraintStart_toStartOf="@id/guideline4"
         app:layout_constraintEnd_toEndOf="@id/guideline5"
-        app:layout_constraintTop_toBottomOf="@id/username"
-        >
+        app:layout_constraintTop_toBottomOf="@id/name"
 
+        app:passwordToggleEnabled="true"
+        >
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -68,36 +68,51 @@
             android:text="Password"/>
 
 
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/email"
+        app:layout_constraintStart_toStartOf="@id/guideline4"
+        app:layout_constraintEnd_toEndOf="@id/guideline5"
+        app:layout_constraintTop_toBottomOf="@id/password"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.6"
+            android:background="@color/white"
+            android:text="Email"/>
+
+
     </com.google.android.material.textfield.TextInputLayout>
 
 
     <Button
-        android:id="@+id/login"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="LOGIN"
-        android:backgroundTint="@color/teal_700"
+        android:id="@+id/confirm"
+        android:text="CONFIRM"
         app:cornerRadius="0dp"
         app:layout_constraintEnd_toEndOf="@id/guideline5"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
-        app:layout_constraintTop_toBottomOf="@id/password"
-        >
+        app:layout_constraintTop_toBottomOf="@id/email"
+        style="@style/ButtonFlat">
 
     </Button>
 
 
     <Button
-        android:id="@+id/signup"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/black"
-        android:text="SIGN UP"
+        android:id="@+id/cancelar"
+        android:text="CANCEL"
+        android:onClick="returnLogin"
         app:cornerRadius="8dp"
         app:layout_constraintEnd_toEndOf="@id/guideline5"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
-        app:layout_constraintTop_toBottomOf="@id/login"
-        >
-        
+        app:layout_constraintTop_toBottomOf="@id/confirm"
+        style="@style/buttonStyle">
+
     </Button>
 
     <androidx.constraintlayout.widget.Guideline
@@ -105,14 +120,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.3" />
+        app:layout_constraintGuide_percent="0.1" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.7" />
+        app:layout_constraintGuide_percent="0.9" />
 
 
 

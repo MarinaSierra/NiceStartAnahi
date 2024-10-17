@@ -17,8 +17,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_contraintStart_toStartOf="parent" >
+        app:layout_constraintTop_toTopOf="parent" >
     </ImageView>
 
     <ImageView
@@ -39,7 +38,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="49dp"
-        app:startIconDrawable="@drawable/ic_icono_foreground"
+        app:startIconDrawable="@drawable/user"
         app:layout_constraintStart_toStartOf="@id/guideline4"
         app:layout_constraintEnd_toEndOf="@id/guideline5"
         app:layout_constraintTop_toBottomOf="@id/logo">
@@ -58,7 +57,7 @@
         android:id="@+id/password"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:startIconDrawable="@drawable/ic_icono_foreground"
+        app:startIconDrawable="@drawable/password"
         app:layout_constraintStart_toStartOf="@id/guideline4"
         app:layout_constraintEnd_toEndOf="@id/guideline5"
         app:layout_constraintTop_toBottomOf="@id/username"
@@ -78,59 +77,42 @@
 
     <Button
         android:id="@+id/login"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:text="LOGIN"
-        android:backgroundTint="@color/teal_700"
         app:cornerRadius="0dp"
         app:layout_constraintEnd_toEndOf="@id/guideline5"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
-        app:layout_constraintTop_toBottomOf="@id/password">
+        app:layout_constraintTop_toBottomOf="@id/password"
+        style="@style/ButtonFlat">
 
     </Button>
 
 
     <Button
         android:id="@+id/signup"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/black"
         android:text="SIGN UP"
+        android:onClick="openSignup"
         app:cornerRadius="8dp"
         app:layout_constraintEnd_toEndOf="@id/guideline5"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toBottomOf="@id/login"
-        >
+        style="@style/buttonStyle">
 
     </Button>
-    <Button
-        android:id="@+id/registrate"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/teal_700"
-        android:text="Registrate"
-        app:cornerRadius="8dp"
-        app:layout_constraintEnd_toEndOf="@id/main"
-        app:layout_constraintStart_toStartOf="@+id/main"
-        app:layout_constraintBottom_toBottomOf="@id/main"
-       >
 
-    </Button>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.2" />
+        app:layout_constraintGuide_percent="0.1" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.8" />
+        app:layout_constraintGuide_percent="0.9" />
 
 
 
