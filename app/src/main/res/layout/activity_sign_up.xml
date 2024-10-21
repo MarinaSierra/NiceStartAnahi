@@ -106,7 +106,7 @@
 
     <Button
         android:id="@+id/cancelar"
-        android:text="CANCEL"
+        android:text="@string/cancel"
         android:onClick="returnLogin"
         app:cornerRadius="8dp"
         app:layout_constraintEnd_toEndOf="@id/guideline5"
