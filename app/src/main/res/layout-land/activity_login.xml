@@ -42,10 +42,10 @@
 
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:alpha="0.6"
             android:background="@color/white"
-            android:text="Username"/>
+            android:text="Username" />
 
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -62,7 +62,7 @@
 
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:alpha="0.6"
             android:background="@color/white"
             android:text="Password"/>
