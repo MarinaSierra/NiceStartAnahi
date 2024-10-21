@@ -78,6 +78,7 @@
     <Button
         android:id="@+id/login"
         android:text="LOGIN"
+        android:onClick="openMain"
         app:cornerRadius="0dp"
         app:layout_constraintEnd_toEndOf="@id/guideline5"
         app:layout_constraintStart_toStartOf="@+id/guideline4"

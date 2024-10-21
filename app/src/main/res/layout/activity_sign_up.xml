@@ -95,6 +95,7 @@
         android:id="@+id/confirm"
         android:text="CONFIRM"
         app:cornerRadius="0dp"
+        android:onClick="returnMain"
         app:layout_constraintEnd_toEndOf="@id/guideline5"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toBottomOf="@id/email"
