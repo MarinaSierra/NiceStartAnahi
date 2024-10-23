@@ -9,12 +9,12 @@ Las tres actividades son el **Login**, el **Sign Up** y el **Main**.
 
 ## LOGIN:
 
-![LOGIN_ACTIVTY](img/Login.png)
+![LOGIN_ACTIVITY](img/Login.png)
 
 
 ## SIGN UP:
 
-![SIGNUP_ACTIVITY](img/Sign%20Up.png)
+![SIGNUP_ACTIVITY](img/Sign Up.png)
 
 
 ## MAIN:
