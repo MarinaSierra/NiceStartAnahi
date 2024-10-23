@@ -1,6 +1,6 @@
 # Proyecto De Interfaces
 
-##Primer proyecto 
+## Primer proyecto 
 
 En este repositorio se manejan dos ramas la *master* y la *hotflix*. Y tiene ya tres actividades.
 
@@ -14,7 +14,7 @@ Las tres actividades son el **Login**, el **Sign Up** y el **Main**.
 
 ## SIGN UP:
 
-![SIGNUP_ACTIVITY](img/Sign Up.png)
+![SIGNUP_ACTIVITY](img/SignUp.png)
 
 
 ## MAIN:
