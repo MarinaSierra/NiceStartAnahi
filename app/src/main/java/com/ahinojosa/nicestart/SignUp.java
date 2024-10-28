@@ -26,11 +26,11 @@ public class SignUp extends AppCompatActivity {
 
         ImageView mBoy = findViewById(R.id.boy);
 
-        Glide.with(this)
-                .load(R.drawable.img)
+       Glide.with(this)
+              .load(R.drawable.img)
                         .transition(DrawableTransitionOptions.withCrossFade(2000))
-                                .centerCrop()
-                                        .placeholder(new ColorDrawable(this.getResources().getColor(R.color.teal_700)))
+                               .centerCrop()
+                                    .placeholder(new ColorDrawable(this.getResources().getColor(R.color.rosa_pas)))
                                                 .into(mBoy);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {

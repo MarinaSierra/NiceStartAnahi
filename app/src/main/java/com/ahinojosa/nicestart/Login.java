@@ -30,7 +30,7 @@ public class Login extends AppCompatActivity {
                 .load(R.drawable.girl)
                         .transition(DrawableTransitionOptions.withCrossFade(2000))
                                 .centerCrop()
-                                        .placeholder(new ColorDrawable(this.getResources().getColor(R.color.teal_700)))
+                                        .placeholder(new ColorDrawable(this.getResources().getColor(R.color.rosa_pas)))
                                                 .into(mGirl);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {

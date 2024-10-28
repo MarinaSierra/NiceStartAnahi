@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:background="@color/rosa_pas"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUp"
-    android:background="@drawable/gradient">
+    tools:context=".SignUp">
 
     <ImageView
         android:id="@+id/boy"
@@ -45,13 +45,14 @@
             android:layout_height="wrap_content"
             android:alpha="0.6"
             android:background="@color/white"
-            android:text="Name"/>
+            android:text="Name" />
 
 
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/password"
         android:layout_width="0dp"
+        android:layout_marginTop="15dp"
         android:layout_height="wrap_content"
         app:startIconDrawable="@drawable/password"
         app:layout_constraintStart_toStartOf="@id/guideline4"
@@ -74,6 +75,8 @@
         android:id="@+id/email"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+
         app:startIconDrawable="@drawable/email"
         app:layout_constraintStart_toStartOf="@id/guideline4"
         app:layout_constraintEnd_toEndOf="@id/guideline5"
@@ -96,6 +99,8 @@
         android:text="CONFIRM"
         app:cornerRadius="0dp"
         android:onClick="returnMain"
+        android:layout_marginTop="25dp"
+
         app:layout_constraintEnd_toEndOf="@id/guideline5"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toBottomOf="@id/email"

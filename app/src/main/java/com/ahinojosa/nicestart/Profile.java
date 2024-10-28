@@ -1,9 +1,9 @@
 package com.ahinojosa.nicestart;
 
-
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.widget.ImageView;
+
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -28,7 +28,7 @@ public class Profile extends AppCompatActivity {
                         .transition(DrawableTransitionOptions.withCrossFade(2000))
                                 .centerCrop()
                                         .circleCrop()
-                                                .placeholder(new ColorDrawable(this.getResources().getColor(R.color.teal_700)))
+                                               // .placeholder(new ColorDrawable(this.getResources().getColor(R.color.teal_700)))
                                                         .into(m);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
