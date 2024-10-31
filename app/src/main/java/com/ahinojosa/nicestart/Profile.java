@@ -28,7 +28,7 @@ public class Profile extends AppCompatActivity {
                         .transition(DrawableTransitionOptions.withCrossFade(2000))
                                 .centerCrop()
                                         .circleCrop()
-                                                .placeholder(new ColorDrawable(this.getResources().getColor(R.color.rosa_pas)))
+                                                .placeholder(new ColorDrawable(this.getResources().getColor(R.color.white)))
                                                         .into(m);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {

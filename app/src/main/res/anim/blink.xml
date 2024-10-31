@@ -18,13 +18,13 @@
     android:toYScale="2"
     android:pivotX="50%"
     android:pivotY="50%" />
-<!--<translate
+<translate
 android:duration="3000"
 android:fillAfter="true"
 android:fromXDelta="0"
-android:toXDelta="200"
+android:toXDelta="100"
 android:fromYDelta="0"
-android:toYDelta="200" />-->
+android:toYDelta="600" />
 <rotate
 android:duration="3000"
 android:fillAfter="true"

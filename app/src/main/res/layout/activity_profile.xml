@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:background="@color/rosa_pas"
+    android:background="@color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Profile">
@@ -45,11 +45,12 @@
 
 
     <TextView
-        android:id="@+id/cancelar"
-        android:text="Email"
+        android:id="@+id/email"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="20dp"
+        android:text="Email"
         android:textSize="20dp"
         app:cornerRadius="8dp"
         app:layout_constraintEnd_toEndOf="@id/guideline5"
@@ -57,6 +58,7 @@
         app:layout_constraintTop_toBottomOf="@id/user">
 
     </TextView>
+
     <TextView
         android:id="@+id/info"
         android:layout_width="0dp"
