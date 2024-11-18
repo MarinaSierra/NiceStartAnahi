@@ -16,4 +16,12 @@
 
 
     </item>
+    <item
+        android:id="@+id/item5"
+        android:title="Expandir"
+        android:icon="@drawable/user"
+        app:showAsAction="ifRoom">
+
+
+    </item>
 </menu>

@@ -45,7 +45,8 @@
             android:layout_height="wrap_content"
             android:alpha="0.6"
             android:background="@color/white"
-            android:text="Name" />
+            android:paddingStart="40dp"
+            android:hint="Name" />
 
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -66,7 +67,8 @@
             android:layout_height="wrap_content"
             android:alpha="0.6"
             android:background="@color/white"
-            android:text="Password"/>
+            android:paddingStart="40dp"
+            android:hint="Password"/>
 
 
 
@@ -88,7 +90,8 @@
             android:layout_height="wrap_content"
             android:alpha="0.6"
             android:background="@color/white"
-            android:text="Email"/>
+            android:paddingStart="40dp"
+            android:hint="Email"/>
 
 
     </com.google.android.material.textfield.TextInputLayout>
