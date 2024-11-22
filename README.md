@@ -2,9 +2,48 @@
 
 ## Primer proyecto 
 
-En este repositorio se manejan dos ramas la *master* y la *hotflix*. Y tiene ya tres actividades.
+En este repositorio se manejan dos ramas la *master* y la *hotflix*. Y ahora cuenta con 5 actividades.
 
-Las tres actividades son el **Login**, el **Sign Up** y el **Main**.
+Las tres actividades anteriores eran el **Login**, el **Sign Up** y el **Main**.
+Ahora cuenta con dos actividades más el **Profile** y el **Splash**.
+
+Ahora al abrir la aplicación nos saldrá el Activity Splash, ya que la animación principal de la aplicación.
+### SPLASH:
+![SPLASH_ACTIVITY]()
+Cuenta con tres animaciones,dos para el icono de la app y uno para el texto y el icono.
+La primera es de de zoom, es la que tiene el texto y el icono.
+
+    <scale
+    android:duration="3050"
+    android:fillAfter="true"
+    android:fromXScale="0"
+    android:toXScale="2"
+    android:fromYScale="0"
+    android:toYScale="2"
+    android:pivotX="50%"
+    android:pivotY="50%" />
+
+La segunda es la de giro que la tiene el icono :
+
+    <rotate
+    android:duration="3000"
+    android:fillAfter="true"
+    android:fromDegrees="0"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:toDegrees="360"/>
+
+Y la ultima que es la de traslado :
+
+    <translate
+    android:duration="3000"
+    android:fillAfter="true"
+    android:fromXDelta="0"
+    android:toXDelta="100"
+    android:fromYDelta="0"
+    android:toYDelta="600" />
+
+Estas animaciones generan que la ventana de apertura de la app sea más dinámica.
 
 
 ### LOGIN:
@@ -92,5 +131,3 @@ El código es el siguiente:
 ### MAIN:
 
 ![MAIN_ACTIVITY](img/Main.png)
-
-El main todavia no tiene ningun boton por lo que solo es una pantalla.
