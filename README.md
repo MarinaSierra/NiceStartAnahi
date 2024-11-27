@@ -131,3 +131,5 @@ El código es el siguiente:
 ### MAIN:
 
 ![MAIN_ACTIVITY](img/Main.png)
+
+_Codigo generado por Marina Sierra_
