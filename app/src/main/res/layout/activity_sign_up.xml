@@ -19,17 +19,19 @@
         app:layout_constraintTop_toTopOf="parent">
         <!--android:src="@drawable/img"-->
     </ImageView>
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="129dp"
-        android:layout_height="129dp"
-        android:layout_marginTop="48dp"
-        android:src="@drawable/ic_icono_foreground"
-        app:layout_constraintEnd_toEndOf="@id/main"
-        app:layout_constraintStart_toStartOf="@id/main"
-        app:layout_constraintTop_toTopOf="@id/main">
 
-    </ImageView>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/logo"
+        android:layout_width="218dp"
+        android:layout_height="204dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/boy"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/starts_animation" />
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/name"
         android:layout_width="0dp"
